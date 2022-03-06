@@ -1,0 +1,303 @@
+<!-- <link rel="stylesheet" href="css/style.css" />
+
+
+<body>
+    <div class="top-bar">
+      <button class="boton" id="prev-page">
+        <i class="fas fa-arrow-circle-left"></i> Prev Page
+      </button>
+      <button class="boton" id="next-page">
+        Next Page <i class="fas fa-arrow-circle-right"></i>
+      </button>
+      <span class="page-info">
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+      </span>
+    </div>
+
+    <canvas id="pdf-render"></canvas>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+    -->
+
+
+    <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaime Perez</title>
+    <link rel="shortcut icon" href="favicon-2021061601261237.ico" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/> -->
+    <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    </noscript>
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,100&display=swap"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,100&display=swap" media="print" onload="this.media='all'" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css" />
+
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+
+  
+      </style>
+    </noscript>
+  </head>
+  <body class="bg-light" id="top">
+  <header class="d-print-none">
+      <div class="container text-center text-lg-left">
+        <div class="pt-4 clearfix">
+          <h1 class="site-title mb-0">Jaime Perez</h1>
+          <div class="site-nav"> 
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html" title="Home"><span class="menu-title">Inicio</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#certifications" title="Certifications"><span class="menu-title">Certificaciones</span></a>
+                </li> 
+                <li class="nav-item"><a class="nav-link" href="#achievements" title="Achievements"><span class="menu-title">Logros </span></a>
+                </li>
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-content">
+      <div class="container"> 
+
+  <div class="resume-container">
+  <div class="shadow-1-strong bg-white my-5" id="intro">
+    <div class="bg-info text-white">
+      <div class="cover bg-image"><img src="images/programin.jpg"/>
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
+          <div class="text-center p-5">
+            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/zarate.png" width="160" height="160"/></div>
+            <div class="header-bio mt-3">
+              <div data-aos="zoom-in" data-aos-delay="0">
+                <h2 class="h1">Jaime Perez</h2>
+                <p>DESARROLLADOR</p>
+              </div>
+              <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
+                <nav role="navigation">
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="https://m.me/jaime.p.zarate" title="Messenger"><i class="fab fa-facebook-messenger"></i><span class="menu-title sr-only">Messenger</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/jaime.p.zarate" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/jaime.pz8/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="d-print-none" ><a class="btn btn-danger btn-lg shadow-sm mt-1" href="Curriculum-Vitae.pdf" data-aos="fade-in" target="_blank" data-aos-delay="700" >Visualizar Curriculum</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="shadow-1-strong bg-white my-5 p-5" id="certifications">
+      <div class="reference-section">
+        <h2 class="h2 fw-light mb-4"> Certificaciones</h2>
+        <div class="row">
+            <div class="col-md-4" style="text-align:center" data-aos="fade-left" data-aos-delay="100">
+              <h6 style="color: red"><strong>CISCO</strong></h6>
+              </br>
+              <div class="col-md-12"><a target="_blank"><img class="img-fluid" src="images/cisco2.png" width="800" height="500"/></a>
+              </div>
+              </br>
+              <p><strong>Instituto: </strong> 
+              </br>
+              Cisco Networking Academy</p>
+              <p><strong>Plataforma: </strong> 
+              </br>
+              CISCO</p>
+              <p><strong>Descripcion: </strong> 
+              </br>
+              Introducción a curso de CiberSeguridad.</p>
+              <p><strong>Fecha: </strong>
+              </br>
+              13 Abril, 2021</p>
+              <a class="btn btn-success btn-lg shadow-sm mt-1" href="IntroductionCisco.pdf" data-aos="fade-left" data-aos-delay="700" style="margin-bottom: 10px;">Ver</a>
+            </div>
+
+            <div class="col-md-4" style="text-align:center" data-aos="fade-left" data-aos-delay="100">
+              <h6 style="color: red"><strong>ITEP</strong></h6>
+              </br>
+              <div class="col-md-12"><a target="_blank"><img class="img-fluid" src="images/itep2.png" width="800" height="500"/></a>
+              </div>
+              </br>
+              <p><strong>Instituto: </strong> 
+              </br>
+              International Test of English Proficiency.</p>
+              <p><strong>Plataforma: </strong> 
+              </br>
+              ITEP</p>
+              <p><strong>Descripción: </strong> 
+              </br>
+              Reporte oficial de resultados</p>
+              <p><strong>Fecha: </strong>
+              </br>
+              23 Noviembre, 2020</p>
+              <a class="btn btn-success btn-lg shadow-sm mt-1" href="ITEP.pdf" data-aos="fade-left" data-aos-delay="700" style="margin-bottom: 10px;">Ver
+              </a>
+            </div>
+
+
+            <div class="col-md-4" style="text-align:center" data-aos="fade-left" data-aos-delay="100">
+              <h6 style="color: red"><strong>IIES</strong></h6>
+              </br>
+              <div class="col-md-12"><a target="_blank"><img class="img-fluid" src="images/itep2.png" width="800" height="500"/></a>
+              </div>
+              </br>
+              <p><strong>Instituto: </strong> 
+              </br>
+              Instituto Internacional de Estudios S.</p>
+              <p><strong>Plataforma: </strong> 
+              </br>
+              IIES</p>
+              <p><strong>Descripción: </strong> 
+              </br>
+              Acreditación de Cursos de Inglés</p>
+              <p><strong>Fecha: </strong>
+              </br>
+              27 Enero - 28 April, 2020</p>
+              <a class="btn btn-success btn-lg shadow-sm mt-1" href="IIES.pdf" data-aos="fade-left" data-aos-delay="700">Ver</a>
+            </div>
+        </div>
+      </div>
+     </div>
+  
+  <div class="shadow-1-strong bg-white my-5 p-5" id="achievements">
+    <div class="reference-section">
+      <h2 class="h2 fw-light mb-4">Logros</h2>
+      <div class="row"> 
+        <div class="col-md-4">
+          <div class="d-flex mb-2">
+            <div class="avatar"><img src="images/uttnu.jpg" width="60" height="60"/></div>
+            <div class="header-bio m-3 mb-0">
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0"><strong>UTTN</strong></h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Agosto 2018</p>
+            </div>
+          </div>
+          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">
+Inicio de Ingeniería en Tecnologías de la Información en la Universidad Tecnológica de Tamaulipas Norte.</p> </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="d-flex mb-2">
+            <div class="avatar"><img src="images/uttnu.jpg" width="60" height="60"/></div>
+            <div class="header-bio m-3 mb-0">
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0"><strong>UTTN</strong></h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100"> Agosto, 2018 - Diciembre, 2020</p>
+            </div>
+          </div>
+          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Completado con éxito Técnico Superior Universitario en Tecnologías de la Información área Desarrollo de Software Multiplataforma.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex mb-2">
+            <div class="avatar"><img src="images/pasmx.jpg" width="60" height="60"/>
+            </div>
+            <div class="header-bio m-3 mb-0">
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0"><strong>PANASONIC</strong></h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100"> 2021 - Presente</p>
+            </div>
+          </div>
+          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Inicio de prácticas profesionales en el Departamento de Sistemas de la Empresa Panasonic Corp.</p>
+          </div>
+        </div>
+
+        <div class="top-bar">
+              <button class="boton" id="prev-page">
+                <i class="fas fa-arrow-circle-left"></i> Página anterior
+              </button>
+              <button class="boton" id="next-page">
+              Página siguiente <i class="fas fa-arrow-circle-right"></i>
+              </button>
+              <span class="page-info">
+              Página <span id="page-num"></span> de <span id="page-count"></span>
+              </span>
+            </div>
+            <canvas id="pdf-render"></canvas>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- <div class="shadow-1-strong bg-white my-5 p-5" id="achievements">
+    <div class="reference-section">
+      <h2 class="h2 fw-light mb-4">Achievements</h2>
+      <div class="row"> 
+            <div class="top-bar">
+              <button class="boton" id="prev-page">
+                <i class="fas fa-arrow-circle-left"></i> Prev Page
+              </button>
+              <button class="boton" id="next-page">
+                Next Page <i class="fas fa-arrow-circle-right"></i>
+              </button>
+              <span class="page-info">
+                Page <span id="page-num"></span> of <span id="page-count"></span>
+              </span>
+            </div>
+            <canvas id="pdf-render"></canvas>
+      </div>
+    </div>
+  </div> -->
+
+      <div class="container" style="background-color: black;">
+        <div class="my-3">
+          <!-- <div class="h4" style="color: white;">Jaime Perez</div> -->
+          <div class="footer-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center" style="color: white;">
+              <li class="nav-item"><a class="nav-link" href="https://m.me/jaime.p.zarate" title="Messenger"><i class="fab fa-facebook-messenger"></i><span class="menu-title sr-only">Messenger</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/jaime.p.zarate" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/jaime.pz8/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                    </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="text-small">
+          <div class="mb-1" style="color: white; text-align: center;"> <p>Copyright &copy;<strong> 2021 by Jaime Perez. </strong> Todos los derechos reservados.</p> </div>
+          <!-- <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div> -->
+        </div>
+      </div>
+    
+    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
+    <script src="scripts/aos.js?ver=1.2.1"></script>
+    <script src="scripts/main.js?ver=1.2.1"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
